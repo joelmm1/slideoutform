@@ -10,7 +10,7 @@
 a,
 label,
 p {
-  color: #fff;;
+  color: #333;
 }
 label {
   font-weight: 600;
@@ -34,7 +34,19 @@ label {
 }
 .toggle-form .formwrap img {
     width: 20px;
+    background: #333;
 }
+.toggle-form .formwrap img:after{
+  content:"X";
+  color: #333;
+  font-size: 50px;
+  position: relative;
+  float: left;
+  height: 30px;
+  width: 30px;
+  background: purple;
+}
+
 .orange {
     background-color: #ff910e;
     border-color: #ff910e;
@@ -64,17 +76,21 @@ label {
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 .formwrap {
-  background-color: #1aafff; 
+  background-color: #fff;
   max-width: 620px;
   height: 100%;
   float: right;
   box-shadow: -1px 0px 12px rgba(0, 0, 0, 0.1);
+  padding: 50px !important;
 }
 .formwrap form input, .formwrap form input:focus {
     background-color: transparent;
-    border-color: #fff;
-    color: #fff;
+    border-color: #333;
+    color: #333;
     margin-right: 10px;
+}
+.formwrap>form {
+    margin-top: 60px;
 }
 
 .mid-col {
@@ -90,8 +106,8 @@ label {
  }
 select.form-control:not([size]):not([multiple]) {
   background-color: transparent;
-  border-color: #fff;
-  color: #fff;
+  border-color: #333;
+  color: #333;
 }
 option {
   background-color: #fff;
